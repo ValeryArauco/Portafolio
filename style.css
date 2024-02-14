@@ -95,7 +95,7 @@ nav a:hover{
 
 }
 
-.bienvenida a{
+.bienvenida a, .proyecto-detalles a{
     background-color: white;
     color: #323B60;
     padding: 10px;
@@ -107,10 +107,11 @@ nav a:hover{
     margin-right: 20px;
 }
 
-.bienvenida a:hover{
+.bienvenida a:hover, .proyecto-detalles a:hover{
     background-color: #323B60;
     color: white;
     size: 5%;
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2);
 }
 
 hr {
@@ -291,8 +292,8 @@ hr {
     background-color: black;
 } */
 
-.proyectos-items li:active{
-    border-color:#323B60;
+.proyectos-items a:active{
+    color: #323B60;
 }
 
 .proyectos-items img{
@@ -302,7 +303,7 @@ hr {
     height: auto;
 }
 
-.proyectos-items h2{
+.proyectos-items h2, .proyecto-detalles h2{
     font-size: 30px;
     font-weight: bold;
     margin-top: 30px;
@@ -376,6 +377,47 @@ thead{
 td, th{
     border: 1px solid black;
     padding: 8px 15px;
+}
+
+.proyecto{
+    margin: 6% 0 0 0;
+    padding: 5% 0;
+}
+
+.proyecto-info{
+    display: flex;
+    margin: 0 10%;
+}
+
+
+.proyecto-detalles{
+    background-color: #323B60;
+    margin-left: 5%;
+    width: 50%;
+    border-radius: 25px;
+    color: #ffffff;
+    padding: 25px;
+    padding-top: 0;
+}
+
+.descripcion-proyecto{
+    margin: 10px 0;
+}
+
+.proyecto-detalles p strong{
+    font-weight: bold;
+} 
+
+.proyecto-detalles ul li{
+    margin: 5px;
+}
+.proyecto-detalles ul li::before{
+    content: "\2022"; /* Punto (•) como viñeta */
+    margin-right: 8px;
+}
+
+.proyecto-detalles ul li:last-child{
+    margin-bottom: 40px;
 }
 
 /* css para footer */

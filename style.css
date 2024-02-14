@@ -389,6 +389,10 @@ td, th{
     margin: 0 10%;
 }
 
+.proyecto-info img{
+    width: 585px;
+    height: 350px;
+}
 
 .proyecto-detalles{
     background-color: #323B60;
